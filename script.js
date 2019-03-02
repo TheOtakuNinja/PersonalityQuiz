@@ -6,6 +6,10 @@ resetButton.addEventListener("click", resetQuiz)
 
 let resultArea = document.getElementById("result")
 
+$('#reset-button').click(function() {
+    location.reload();
+});
+
 
 //process results
 function processResults() {
@@ -105,8 +109,7 @@ picture2.src="https://media1.tenor.com/images/1cf020bf50d58c3f07ecab092e1f2911/t
 
 //resets display on page
 function resetQuiz() {
-  resultArea.innerHTML = ""
-
+  resultArea.innerHTML = "";
 }
 
 //point system
@@ -138,3 +141,12 @@ let weaponPoints = {
   q4c3: 2,
   q4c4: 3
 }
+
+
+// $("#picture").hover(enter, leave);
+// function enter() {
+//   this.src = "https://i.imgur.com/WyMHuyL.gif";
+// }
+// function leave() {
+//   this.src = "https://i.pinimg.com/originals/bb/01/36/bb013692bb7ec1cdd2b804746f3631a3.png";
+// }

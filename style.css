@@ -5,9 +5,14 @@ body {
 }
 h2 {
   color: cyan;
+  font-family: cursive;
+}
+label{
+
+  font-family: sans-serif;
 }
 #q1c1 {
-  background-color: white;
+  background-color: red;
 }
 #result{
   color:white;
@@ -16,4 +21,8 @@ h2 {
 img{
   width: 700px;
   height: 700px;
+}
+button{
+  width: 100px;
+  height: 20px;
 }
