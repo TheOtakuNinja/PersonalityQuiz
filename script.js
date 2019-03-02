@@ -16,25 +16,31 @@ function processResults() {
 
   let picture2 = document.getElementById("picture")
   if (personalityResult == "Nanami Chiaki from 'Danganronpa Trigger Happy Havoc' " ){
-picture2.src="https://files.gamebanana.com/img/ico/sprays/57e5e032eeb8a.png"
+picture2.src="https://gifimage.net/wp-content/uploads/2017/10/chiaki-nanami-gif-3.gif"
 } else if (personalityResult == "Shiroe from 'Log horizon' "){
-picture2.src="https://i.pinimg.com/originals/b4/cb/9a/b4cb9a678eac1c2b9dd32445edd76315.jpg"
+picture2.src="https://media1.tenor.com/images/01f3172376ed6d13f00fe6c796e6e0a9/tenor.gif?itemid=5486686"
 } else if (personalityResult == "Rimuru Tempest (Satoru Mikami) from 'Tensei Shitara Slime Datta Ken' and/or 'That Time I got Reincarnated as a Slime' "){
-picture2.src="https://i.imgur.com/h86Fsne.jpg"
+picture2.src="https://i.pinimg.com/originals/75/a3/5b/75a35be279174cca6c8a768aad099ad5.gif"
 } else if (personalityResult == "Ainz Ooal Gown (Suzuki Satoru) 'from Overlord' "){
-picture2.src="https://i.imgur.com/3XHgqvt.png"
+picture2.src="https://static.comicvine.com/uploads/original/11123/111237136/5025486-ainz.gif"
 } else if (personalityResult == "Kaneki Ken from 'Tokyo Ghoul' ") {
-picture2.src="https://m.media-amazon.com/images/M/MV5BMWJlNzdlNDctNDE0Zi00MDQ0LWFhY2YtMDcwMjQyNjYxODNjXkEyXkFqcGdeQXVyNzQxMzEwMTY@._V1_.jpg"
+picture2.src="https://media1.tenor.com/images/0351932815870044910445c945c74e21/tenor.gif?itemid=11878169"
 } else if (personalityResult == "Tanaka from 'Tanaka-kun wa Itsumo Kedaruge' and/or 'Tanaka-kun is Always Listless' "){
-picture2.src="http://www.otakuusamagazine.com/Uploads/Public/Images/Anime/Tanaka-kun/tanakakun0.jpg"
+picture2.src="http://68.media.tumblr.com/f98f46671935f2c546902dcd770e689b/tumblr_orzu8xmHwu1wskyx5o1_500.gif"
 } else if (personalityResult == "Hei (BK-201) 'from Darker Than Black' "){
-picture2.src="https://steamuserimages-a.akamaihd.net/ugc/107357514777154090/A053E1673791414763178ED134A6E0A6C34AFDFD/"
+picture2.src="https://66.media.tumblr.com/b2fcb510645cd04f146a122d4ab52a35/tumblr_myyl5vAwMT1qcexlbo2_500.gif"
 } else if (personalityResult == "Tatsuya Shiba from 'Mahouka Koukou no Rettousei Wiki' and/or 'The Irregular Magic High School' "){
-picture2.src="https://4.bp.blogspot.com/-oK0L7-fFTKU/VQtruwB39yI/AAAAAAAAAVw/j_rF8yhKmKE/s1600/Tatsuya%2B-%2BThumbnails.png"
-} else if (personalityResult == "Eren Yeager from 'Shingeki no Kyojin' and/or 'Attack on Titan' "){
-picture2.src="http://pm1.narvii.com/5984/7e6f7a293365ba5ad75075c994e928c5c219efa9_00.jpg"
+picture2.src="http://38.media.tumblr.com/409bc5c7539d7d6445ecdf5b00231cf8/tumblr_nemi83hdfb1tsajh1o1_500.gif"
+} else if (personalityResult == "Rem 'Re:zero' "){
+picture2.src="https://thumbs.gfycat.com/GleefulCooperativeAdmiralbutterfly-size_restricted.gif"
+}else if (personalityResult == "Chika fujiwara from 'love is war' and/or 'kaguya-sama wa kokurasetai' "){
+picture2.src="https://media1.tenor.com/images/b924e35dc0eba4e34318e86481db69eb/tenor.gif?itemid=13410604"
+}else if (personalityResult == "Zero Two from 'DARLING in the FRANXX' "){
+picture2.src="https://thumbs.gfycat.com/PlayfulEachGrouper-max-1mb.gif"
+}else if (personalityResult == "Eren Yeager from 'Shingeki no Kyojin' and/or 'Attack on Titan' "){
+picture2.src="https://media1.tenor.com/images/0759ff0dd5c33a7ccefe929ba3f18cc2/tenor.gif?itemid=8524166"
 } else {
-picture2.src="https://images-eds-ssl.xboxlive.com/image?url=8Oaj9Ryq1G1_p3lLnXlsaZgGzAie6Mnu24_PawYuDYIoH77pJ.X5Z.MqQPibUVTchUnAj40aHvUUo7k4TwoaCpZO27NRghcEK2tizD.Eyd2wDhRaYXz0OiGUw4EmWznInThMyIISqSkVRyxQgUIdGKsQQ2ykjwRk144gwcL0Y1.tslxhfnlXWvumypxP8dGsISaldsFK8MJekAJIDuKuEGER8EcbN8hrroMSRiv09JM-&h=1080&w=1920&format=jpg"
+picture2.src="https://media1.tenor.com/images/1cf020bf50d58c3f07ecab092e1f2911/tenor.gif?itemid=10467096"
 }
   function getPersonality() {
     let animeChoice = document.querySelector('input[name="anime"]:checked');
@@ -43,6 +49,11 @@ picture2.src="https://images-eds-ssl.xboxlive.com/image?url=8Oaj9Ryq1G1_p3lLnXls
     // console.log(weaponChoice.id)
     let genreChoice = document.querySelector('input[name="genre"]:checked');
     // console.log(colorChoice.id)
+    let weaponChoice = document.querySelector('input[name="weapon"]:checked');
+
+
+
+
     let totalPoints = 0;
     totalPoints = totalPoints + animePoints[animeChoice.id]
     console.log(animePoints[animeChoice.id])
@@ -50,11 +61,17 @@ picture2.src="https://images-eds-ssl.xboxlive.com/image?url=8Oaj9Ryq1G1_p3lLnXls
     console.log(mangaPoints[mangaChoice.id])
     totalPoints = totalPoints + genrePoints[genreChoice.id]
     console.log(genrePoints[genreChoice.id])
+    totalPoints = totalPoints + weaponPoints[weaponChoice.id]
+    console.log(weaponPoints[weaponChoice.id])
     console.log(totalPoints)
+
+
+
 
     animeChoice.checked = false;
     mangaChoice.checked = false;
     genreChoice.checked = false;
+    weaponChoice.checked = false;
 
     if (totalPoints == 0 ) {
       return "Naruto Uzumaki from 'Naruto' TRASH NARUTO SOOOOOOOO BAD"
@@ -63,16 +80,22 @@ picture2.src="https://images-eds-ssl.xboxlive.com/image?url=8Oaj9Ryq1G1_p3lLnXls
     } else if (totalPoints == 2 ) {
       return "Tatsuya Shiba from 'Mahouka Koukou no Rettousei Wiki' and/or 'The Irregular Magic High School' "
     } else if (totalPoints == 3 ) {
-      return "Hei (BK-201) 'from Darker Than Black' "
+      return "Rem 'Re:zero' "
     } else if (totalPoints == 4 ) {
-      return "Tanaka from 'Tanaka-kun wa Itsumo Kedaruge' and/or 'Tanaka-kun is Always Listless' "
+      return "Hei (BK-201) 'from Darker Than Black' "
     } else if (totalPoints == 5 ) {
-      return "Kaneki Ken from 'Tokyo Ghoul' "
-    } else if (totalPoints == 6 ) {
-      return "Ainz Ooal Gown (Suzuki Satoru) 'from Overlord' "
+      return "Tanaka from 'Tanaka-kun wa Itsumo Kedaruge' and/or 'Tanaka-kun is Always Listless' "
+    } else if (totalPoints == 6 ){
+      return "Chika fujiwara from 'love is war' and/or 'kaguya-sama wa kokurasetai' "
     } else if (totalPoints == 7 ) {
-      return "Rimuru Tempest (Satoru Mikami) from 'Tensei Shitara Slime Datta Ken' and/or 'That Time I got Reincarnated as a Slime' "
+      return "Kaneki Ken from 'Tokyo Ghoul' "
     } else if (totalPoints == 8 ) {
+      return "Ainz Ooal Gown (Suzuki Satoru) 'from Overlord' "
+    } else if (totalPoints == 9 ){
+      return "Zero Two from 'DARLING in the FRANXX' "
+    } else if (totalPoints == 10 ){
+      return "Rimuru Tempest (Satoru Mikami) from 'Tensei Shitara Slime Datta Ken' and/or 'That Time I got Reincarnated as a Slime' "
+    } else if (totalPoints == 11 ){
       return "Shiroe from 'Log horizon' "
     } else {
       return "Nanami Chiaki from 'Danganronpa Trigger Happy Havoc' "
@@ -107,4 +130,11 @@ let genrePoints = {
   q3c2: 1,
   q3c3: 2,
   q3c4: 3
+}
+
+let weaponPoints = {
+  q4c1: 0,
+  q4c2: 1,
+  q4c3: 2,
+  q4c4: 3
 }
